@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+
+    <route url="/V1/payfort/getsignature" method="POST">
+        <service class="LeeSwagger\PayfortApi\Api\Signature\PayfortSignatureInterface" method="getSignature" />
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+
+	<route url="/V1/payfort/getinstallments" method="POST">
+		<service class="LeeSwagger\PayfortApi\Api\Installments\InstallmentsInterface" method="getInstallments" />
+		<resources>
+			<resource ref="anonymous" />
+		</resources>
+	</route>
+
+	<route url="/V1/payfort/tokenize" method="POST">
+		<service class="LeeSwagger\PayfortApi\Api\Installments\TokenizationInterface" method="getToken" />
+		<resources>
+			<resource ref="anonymous" />
+		</resources>
+	</route>
+
+	<route url="/V1/payfort/authorize" method="POST">
+		<service class="LeeSwagger\PayfortApi\Api\Installments\AuthorizationInterface" method="getAuthorization" />
+		<resources>
+			<resource ref="anonymous" />
+		</resources>
+	</route>
+
+	<route url="/V1/payfort/3dscheck" method="POST">
+		<service class="LeeSwagger\PayfortApi\Api\Installments\ThreeDSResponseInterface" method="getThreeDSResponse" />
+		<resources>
+			<resource ref="anonymous" />
+		</resources>
+	</route>
+
+</routes>

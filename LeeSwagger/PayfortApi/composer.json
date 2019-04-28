@@ -1,0 +1,36 @@
+{
+    "name": "leeswagger/module-payfortapi",
+    "description": "This module's purpose is to allow API calls for Payfort's hosted Integration Endpoints",
+    "repositories": [
+      {
+        "type": "package",
+        "package": {
+          "name": "payfort-fort-package-fake",
+          "version": "1.0",
+          "source": {
+            "url": "https://github.com/payfort/magento2-payfort.git",
+            "type": "git",
+            "reference": "master"
+          }
+        }
+      }
+    ],
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "email": "youssuph@purpleboltng.com",
+            "name": "Youssuph"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {"payfort-fort-package-fake": "*"},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "LeeSwagger\\PayfortApi\\": ""
+        }
+    }
+}

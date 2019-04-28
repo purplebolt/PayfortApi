@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <preference for="LeeSwagger\PayfortApi\Api\Signature\PayfortSignatureInterface"
+                type="LeeSwagger\PayfortApi\Model\Signature\PayfortSignature"/>
+
+    <preference for="LeeSwagger\PayfortApi\Api\Data\Signature\SignatureInputInterface"
+                type="LeeSwagger\PayfortApi\Model\Signature\ParamInput\SignatureInput"/>
+
+
+	    <preference for="LeeSwagger\PayfortApi\Api\Installments\InstallmentsInterface"
+				type="LeeSwagger\PayfortApi\Model\Installments\Installments"/>
+
+	    <preference for="LeeSwagger\PayfortApi\Api\Data\Installments\GetInstallments\InstallmentInterface"
+				type="LeeSwagger\PayfortApi\Model\Data\Installments\GetInstallments\Installments"/>
+
+	    <preference for="LeeSwagger\PayfortApi\Api\Data\Installments\GetInstallments\InstallmentInputInterface"
+				type="LeeSwagger\PayfortApi\Model\Data\Installments\GetInstallments\InstallmentInput"/>
+
+    	<preference for="LeeSwagger\PayfortApi\Api\Data\Installments\GetInstallments\InstallmentDetail\InstallmentDetailInterface"
+				type="LeeSwagger\PayfortApi\Model\Data\Installments\GetInstallments\InstallmentDetail\InstallmentDetail"/>
+
+    	<preference for="LeeSwagger\PayfortApi\Api\Data\Installments\GetInstallments\IssuerDetail\IssuerDetailInterface"
+				type="LeeSwagger\PayfortApi\Model\Data\Installments\GetInstallments\IssuerDetail\IssuerDetail"/>
+
+    	<preference for="LeeSwagger\PayfortApi\Api\Data\Installments\GetInstallments\IssuerDetail\IssuerDetailItemInterface"
+				type="LeeSwagger\PayfortApi\Model\Data\Installments\GetInstallments\IssuerDetail\IssuerDetailItem"/>
+
+    	<preference for="LeeSwagger\PayfortApi\Api\Data\Installments\GetInstallments\PlanDetails\PlanDetailsInterface"
+				type="LeeSwagger\PayfortApi\Model\Data\Installments\GetInstallments\PlanDetails\PlanDetails"/>
+
+    	<preference for="LeeSwagger\PayfortApi\Api\Data\Installments\GetInstallments\PlanDetails\PlanDetailsItemInterface"
+				type="LeeSwagger\PayfortApi\Model\Data\Installments\GetInstallments\PlanDetails\PlanDetailsItem"/>
+
+    	<preference for="LeeSwagger\PayfortApi\Model\ParamInputs\BaseParamInputInterface"
+				type="LeeSwagger\PayfortApi\Model\ParamInputs\BaseParamInput"/>
+
+    	<preference for="LeeSwagger\PayfortApi\Model\Config\ConfigDataInterface"
+				type="LeeSwagger\PayfortApi\Helper\Config\Data"/>
+
+
+
+
+
+    <preference for="LeeSwagger\PayfortApi\Api\Data\Installments\Tokenization\TokenizationInputInterface"
+                type="LeeSwagger\PayfortApi\Model\Data\Installments\Tokenization\TokenizationInput"/>
+
+    <preference for="LeeSwagger\PayfortApi\Api\Installments\TokenizationInterface"
+                type="LeeSwagger\PayfortApi\Model\Installments\Tokenization"/>
+
+    <preference for="LeeSwagger\PayfortApi\Api\Data\Installments\Tokenization\TokenizationInterface"
+                type="LeeSwagger\PayfortApi\Model\Data\Installments\Tokenization\Tokenization"/>
+
+
+
+
+
+    <preference for="LeeSwagger\PayfortApi\Api\Data\Installments\Authorization\AuthorizationInputInterface"
+                type="LeeSwagger\PayfortApi\Model\Data\Installments\Authorization\AuthorizationInput"/>
+
+    <preference for="LeeSwagger\PayfortApi\Api\Installments\AuthorizationInterface"
+                type="LeeSwagger\PayfortApi\Model\Installments\Authorization"/>
+
+    <preference for="LeeSwagger\PayfortApi\Api\Data\Installments\Authorization\AuthorizationInterface"
+                type="LeeSwagger\PayfortApi\Model\Data\Installments\Authorization\Authorization"/>
+
+
+
+    <preference for="LeeSwagger\PayfortApi\Api\Data\Installments\ThreeDSResponse\ThreeDSResponseInterface"
+                type="LeeSwagger\PayfortApi\Model\Data\Installments\ThreeDSResponse\ThreeDSResponse"/>
+
+    <preference for="LeeSwagger\PayfortApi\Api\Installments\ThreeDSResponseInterface"
+                type="LeeSwagger\PayfortApi\Model\Installments\ThreeDSResponse"/>
+
+</config>
